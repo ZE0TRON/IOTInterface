@@ -11,6 +11,7 @@ exports.getButtonStatus = () => {
     return new Promise((resolve,reject)=>{
         statsModel.find({'name':'button'},'status',(err,status)=>{
             if(err) {console.log(err);return;}
+            console.log(status);
             resolve(status[0].status);
         });
     });

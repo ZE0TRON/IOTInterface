@@ -13,8 +13,8 @@ app.use(function (req, res, next) {
     next();
     });
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://127.0.0.1/my_database';
-//var mongoDB = 'mongodb://stackChecker:15061997s@ds233320.mlab.com:33320/heroku_58n7gc3n';
+//var mongoDB = 'mongodb://127.0.0.1/my_database';
+var mongoDB = 'mongodb://iotUser:15061997s@ds233320.mlab.com:33320/heroku_58n7gc3n';
 var mainRoutes = require('./api/routes/mainRoutes');
 mainRoutes(app);
 mongoose.connect(mongoDB);

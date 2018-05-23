@@ -1,0 +1,15 @@
+extends mainFrame
+
+block styles
+    link(href='css/home.css',rel='stylesheet')
+block content
+    .container
+        .row
+            .card
+                h3.card-header Button Sensor
+                .card-body
+                    .label Button Status
+                    .btn.btn-primary(id="buttonStatus")
+                        |Off
+block scripts
+    script(src='js/home.js')                          

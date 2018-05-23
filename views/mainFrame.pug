@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title !{title}
+        title !{title}
+        link(href='css/bootstrap.min.css',rel='stylesheet')
+        link(href='css/mainLayout.css',rel='stylesheet')
+        link(href='css/w3.css',rel='stylesheet')
+        block styles
+            link(href='css/mainLayout.css',rel='stylesheet')
+    body
+        block content
+        script(src='js/jquery-3.3.1.min.js')
+        script(src='js/bootstrap.min.js')
+        block scripts
